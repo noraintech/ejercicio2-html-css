@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+  </head>
+  <style>
+      td, th{
+          padding:10px;
+      }
+  </style>
+  <body>
+    <!--
+Crea un formulario en el que haya que introducir los siguientes datos: Nombre, Apellido, e-mail, teléfono y dirección.
+
+
+Como segunda parte del ejercicio deberás crear una tabla, esta tabla tendrá 4 columnas y 4 filas, en esta tabla deberás hacer que:
+
+
+
+Una de las celdas ocupe dos columnas.
+
+Una de las celdas ocupe dos filas.
+
+-->
+
+    <h2>Formulario</h2>
+    <form>
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+        />
+      </p>
+
+      <p>
+        <label for="apellidos">Apellidos:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="apellidos"
+          placeholder="Escribe tus apellidos"
+        />
+      </p>
+      <p>
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" name="mail" placeholder="Escribe tu email" />
+      </p>
+      <p>
+        <label for="dirección">Dirección</label>
+        <input
+          type="text"
+          id="direccion"
+          name="direccion"
+          placeholder="Escribe tu dirección"
+          
+        />
+      </p>
+      <p>
+        <label for="telefono">Teléfono:</label>
+        <input
+          type="numero"
+          id="numero"
+          name="numero"
+          placeholder="Escribe tu teléfono"
+        />
+      </p>
+    </form>
+
+    <h2>Tabla</h2>
+
+    <table border="1">
+        <tr>
+            <th>cuadradito1</th>
+            <th>cuadradito2</th>
+            <th>cuadradito3</th>
+            <th>cuadradito4</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td colspan="2">...</td>
+        
+        </tr>
+    </table>
+
+
+
+  </body>
+</html>
